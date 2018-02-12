@@ -1,0 +1,25 @@
+group 'mantis.ukr'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.testng:testng:6.13.1'
+    compile 'com.google.cloud.trace:servlet:0.6.0'
+    compile 'org.webpieces:webserver:1.9.92'
+    compile 'org.mortbay.jetty:servlet-annotation-spec:3.0.pre0'
+}
